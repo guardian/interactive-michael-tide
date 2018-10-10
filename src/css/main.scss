@@ -12,7 +12,9 @@
 
 .tide-title {
     @include fs-header(2);
-    margin-bottom: 18px;
+    margin-bottom: 9px;
+    border-top: 1px solid #dcdcdc;
+    padding-top: 3px;
 }
 
 .tide-container {
