@@ -39,6 +39,8 @@
     width: 50%;
     display: inline-block;
 
+    overflow: visible !important;
+
     margin-bottom: 6px;
 
     // @include mq($from: 619px) {
@@ -82,4 +84,27 @@
 .tide-source {
     @include fs-textSans(2);
     color: #767676;
+}
+
+.tide-circle {
+    fill: #333;
+    stroke: none;
+}
+
+.tide-index {
+    @include fs-bodyCopy(1);
+    fill: white;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+.tide-iframe {
+    width: 100%;
+
+    border: none;
+    height: 320px;
+
+    @include mq($from: 619px) {
+        height: 425px;
+    }
 }

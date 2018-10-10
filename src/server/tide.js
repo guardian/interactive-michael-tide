@@ -34,7 +34,7 @@ const get = url => {
 
 const out = []
 
-const parse = str => moment(str, 'YYYY-MM-DD HH:mm').subtract(5, 'hours').format('MMM D, hh:mma')
+const parse = str => moment(str, 'YYYY-MM-DD HH:mm').subtract(5, 'hours').format('D MMM, hh.mma')
 
 stations.slice(1).forEach( s => {
 

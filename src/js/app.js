@@ -49,7 +49,7 @@ const lines = gs
 
 const nums = gs
     .append('text')
-    .text( d => (d === 6 && index === 0) ? '6ft above avg.' : (d === 0 ? '' : d ))
+    .text( d => (d === 6 && index === 0) ? '6ft above avg' : (d === 0 ? '' : d ))
     .attr('class', 'tide-num')
     .attr('y', -4)
 
@@ -74,11 +74,24 @@ const lineGen = d3.line()
         .attr('class', 'tide-top')
         .attr('d', lineGen(o.data.filter( o => o).filter( ( d, i ) => i % 10 === 0 )))
 
+    svg
+        .append('circle')
+        .attr('cx', 10)
+        .attr('cy', yScale(7) - 14)
+        .attr('r', 10)
+        .attr('class', 'tide-circle')
 
     svg
         .append('text')
-        .attr('y', yScale(7) - 6)
-        .attr('x', 0)
+        .attr('x', 10)
+        .attr('y', yScale(7) - 10)
+        .attr('class', 'tide-index')
+        .text(index + 1)
+
+    svg
+        .append('text')
+        .attr('y', yScale(7) - 10)
+        .attr('x', 26)
         .text(o.name)
         .attr('class', 'tide-gauge')
 
@@ -86,7 +99,7 @@ const lineGen = d3.line()
     if(index === 0) {
         svg
             .append('text')
-            .text('Oct 5')
+            .text('5 Oct')
             .attr('y', yScale(0) + 15 )
             .attr('class', 'tide-time')
         

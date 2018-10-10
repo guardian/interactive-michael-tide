@@ -7,6 +7,10 @@ export async function render() {
     return `
     
     <h2 class='tide-title'>Along the Gulf Coast, the tide is up to six feet above normal levels</h2>
+
+    <iframe src='https://interactive.guim.co.uk/uploader/embed/2018/10/archive-zip/giv-3902g4I1pc3BGmLP/' class='tide-iframe'>
+    </iframe>
+
     <div class='tide-container'>
     
     <div class='tide-container-inner'></div>
