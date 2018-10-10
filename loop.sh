@@ -1,5 +1,5 @@
 while true; do
     npm run tide
-    gulp deploylive
+    npm run deploylive
     sleep 3600
 done
