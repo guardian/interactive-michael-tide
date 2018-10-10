@@ -43,9 +43,9 @@
 
     margin-bottom: 6px;
 
-    // @include mq($from: 619px) {
-    //     width: 25%;
-    // }
+    @include mq($from: 619px) {
+        width: 25%;
+    }
 }
 
 .tide-line {
