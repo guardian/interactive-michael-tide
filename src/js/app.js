@@ -111,5 +111,7 @@ const lineGen = d3.line()
             .attr('x', width)
     }
 
+    console.log(o.data.filter(d => d).length)
+
     if(window.resize) { window.resize() }
 })

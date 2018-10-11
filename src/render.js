@@ -6,7 +6,7 @@ export async function render() {
 
     return `
     
-    <h2 class='tide-title'>The tide is up to six feet above normal levels along the Gulf Coast</h2>
+    <h2 class='tide-title'>The tide was up to six feet above normal levels along the Gulf Coast</h2>
 
     <iframe src='https://interactive.guim.co.uk/uploader/embed/2018/10/archive-zip/giv-3902g4I1pc3BGmLP/' class='tide-iframe'>
     </iframe>
